@@ -235,6 +235,10 @@ body {
 	margin-top: 1em;
 }
 
+.cv-mark-down {
+	display: none;
+}
+
 /* BTN */
 
 .btn {
