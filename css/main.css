@@ -437,6 +437,7 @@ body {
 
 .copyright {
 	font-size: 16px;
+	text-align: center;
 }
 
 .copyright p {
@@ -445,6 +446,14 @@ body {
 
 .copyright a {
 	color: var(--white);
+	font-weight: 600;
+	color: rgb(231, 180, 85);
+
+}
+
+.dev a{
+	font-weight: 600;
+	color: rgb(231, 180, 85);
 }
 
 @media (max-width: 620px) {
