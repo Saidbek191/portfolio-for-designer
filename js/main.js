@@ -19,19 +19,22 @@ const modal = document.getElementById("cvModal");
 const openBtn = document.getElementById("openCvBtn");
 const closeBtn = document.getElementById("closeCvBtn");
 
-openBtn.addEventListener("click", () => {
-	modal.classList.add("active");
-});
+if (modal && openBtn && closeBtn) {
 
-closeBtn.addEventListener("click", () => {
-	modal.classList.remove("active");
-});
-
-modal.addEventListener("click", () => {
-	if (e.target === modal) {
+	openBtn.addEventListener("click", () => {
+		modal.classList.add("active");
+	});
+	
+	closeBtn.addEventListener("click", () => {
 		modal.classList.remove("active");
-	}
-});
+	});
+	
+	modal.addEventListener("click", (e) => {
+		if (e.target === modal) {
+			modal.classList.remove("active");
+		}
+	});
+}
 
 // If we change system proparty, we change theam
 window
